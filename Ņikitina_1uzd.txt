@@ -1,0 +1,8 @@
+CSS pievienošana HTML dokumentam tiek veikta ar <link> tagu, kas atrodas HTML dokumenta <head> sadaļā.
+Piemērs:
+<link rel="stylesheet" href="style.css">
+
+JavaScript ieteicams pievienot HTML dokumenta beigās, pirms </body> taga, izmantojot <script> tagu.
+Tas nodrošina, ka HTML saturs tiek ielādēts pirms JavaScript izpildes.
+Piemērs:
+<script src="script.js"></script>
