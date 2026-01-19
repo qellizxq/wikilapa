@@ -1,0 +1,52 @@
+Darbs ar DOM elementiem un dinamiska satura veidošana
+
+Vārds, uzvārds: Jeļizaveta Ņikitina
+Datums: (19.01.26)
+
+1. uzdevums – DOM jēdziens (teorija)
+1.1. Kas ir DOM?
+
+DOM (Document Object Model) ir tīmekļa lapas struktūras attēlojums objektu veidā, ar kuru JavaScript var piekļūt HTML elementiem. Tas ļauj programmatiski mainīt lapas saturu un izskatu.
+
+1.2. Kāpēc DOM ir nepieciešams dinamiskos tīmekļa produktos?
+
+DOM ir nepieciešams, lai tīmekļa lapa varētu mainīties bez pārlādēšanas. Ar DOM palīdzību JavaScript var reaģēt uz lietotāja darbībām un atjaunināt saturu reāllaikā.
+
+2. uzdevums – DOM elementu atlase
+2.1. 
+
+document.getElementById()
+
+document.querySelector()
+
+document.querySelectorAll()
+
+2.2. Kuru atlases metodi Tu šodien izmantoji visbiežāk? Kāpēc?
+
+Visbiežāk izmantoju getElementById(), jo tā ir vienkārša un ātra metode, ja elementam ir unikāls ID.
+
+3. uzdevums – 
+const text = document.getElementById("outputText");
+text.textContent = "Teksts ir mainīts ar JavaScript";
+text.style.color = "blue";
+
+3.1. 
+
+Tiek atlasīts HTML elements ar ID outputText. Tiek mainīts tā teksts un teksta krāsa kļūst zila, kas lietotājam ir uzreiz redzams.
+
+4. uzdevums – 
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "Šis elements tika izveidots dinamiski";
+document.body.appendChild(newParagraph);
+
+5. uzdevums – HTML elementa noņemšana
+newParagraph.remove();
+
+6. uzdevums – DOM nozīme dinamiskā produktā
+6.1.
+
+DOM manipulācijas ļauj tīmekļa lapai būt interaktīvai un reaģēt uz lietotāja darbībām. Tās nodrošina iespēju mainīt saturu, stilus un struktūru bez lapas pārlādes. Tas uzlabo lietotāja pieredzi un padara tīmekļa produktus modernus un ērtus lietošanai.
+
+7. uzdevums – Refleksija
+
+Šajā stundā es iemācījos, kā ar JavaScript piekļūt HTML elementiem, tos mainīt, izveidot jaunus elementus un dzēst tos no lapas. Es sapratu, kā DOM padara tīmekļa lapas dinamiskas un interaktīvas.
