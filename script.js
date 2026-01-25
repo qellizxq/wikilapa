@@ -15,3 +15,25 @@ button.addEventListener("click", () => {
 // INPUT notikums
 input.addEventListener("input", () => {
   output.textContent = "Tu raksti: " + input.value;
+  
+ function showGreeting(name) {
+  const message = document.getElementById("message");
+  message.textContent = "Sveiki, " + name + "!";
+  message.style.color = "green";
+}
+
+document.getElementById("greetBtn").addEventListener("click", () => {
+  const nameInput = document.getElementById("username").value;
+  showGreeting(nameInput);
+});
+function showGreeting(name) {
+  const message = document.getElementById("message");
+
+  if (name === "") {
+    message.textContent = "Lūdzu, ievadi savu vārdu!";
+    message.style.color = "red";
+  } else {
+    message.textContent = "Sveiki, " + name + "!";
+    message.style.color = "green";
+  }
+}
